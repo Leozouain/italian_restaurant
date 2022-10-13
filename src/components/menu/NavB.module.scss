@@ -57,6 +57,12 @@ $desktop_md: 1280px;
 
 .logo{
     width: 150px;
+    cursor: pointer;
+}
+
+.logo:hover{
+  transform: scale(1.2);
+  transition: ease-in 0.3s;
 }
 
 // ***** Header Styles*******

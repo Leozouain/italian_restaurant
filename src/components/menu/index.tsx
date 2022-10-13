@@ -1,6 +1,6 @@
 import styles from './NavB.module.scss';
 import logo from '../../assets/italian.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default  function NavB() {
@@ -14,9 +14,12 @@ export default  function NavB() {
         label: 'About Us',
         to: '/about'
     }];
+
+    const navigate = useNavigate();
+
     return (
         <nav className={styles.menu}>
-            <img src={logo} className={styles.logo} alt="Restaurant Logo" />
+            <img onClick={()=> navigate('/')} src={logo} className={styles.logo} alt="Restaurant Logo" />
             <ul className={styles.menu__list}>
                 {rotas.map((rota, index) => (
                     <li key={index} className={styles.menu__link}>

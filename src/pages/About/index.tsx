@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from './About.module.scss';
 import stylesTema from '../../styles/Tema.module.scss';
 import house from '../../../public/assets/about/casa.png';
