@@ -16,14 +16,6 @@ $desktop_sm: 1080px;
 $desktop_md: 1280px;
 
 
-.menu{
-    padding: 20px $padding-horizontal;
-    background-color: red($color: #000000);
-}
-
-.logo{
-    width: 150px;
-}
 
 .header{
     background-image: url(../../assets/menu/header.png);
@@ -41,28 +33,5 @@ $desktop_md: 1280px;
         min-width: 400px;
         width: 40%;
     }
-}
-
-.carte {
-    
-      &__filter {
-        align-items: center;
-        background-color: $grey;
-        border: none;
-        border-radius: 4px;
-        display: flex;
-        font-size: 1.25rem;
-        font-weight: bold;
-        height: 40px;
-        justify-content: center;
-        width: 150px;
-        &--ativo {
-          background-color: $blue;
-          color: white;
-       
-      }
-    }
-
   }
-
- 
+  

@@ -1,42 +1,28 @@
-import logo from "../../../../assets/italian.png"
-import styles from './Item.module.scss'
-import menu from "../items.json"
-import classNames from "classnames" 
 
-type Props = typeof menu[0]
+import styles from './Item.module.scss';
+import { Dish } from '../../../../types/Dish';
+import classNames from 'classnames'; 
+import Tags from '../../../../components/Tags';
+import { useNavigate } from 'react-router-dom';
 
-export default function Item(props: Props){
-    const {title, description, category, size, serving, price , photo} = props
+
+
+export default function Item(props: Dish){
+    const {title, description, id, category, size, serving, price , photo} = props;
+    const navigate = useNavigate();
     return (
-    <div className={styles.item}>
-        <div className={styles.item__image}>
-            <img  src={photo} alt={title} />
-        </div>
-        <div className={styles.item__description}>
-            <h2>
-                {title}
-            </h2>
-            <p>
-                {description}
-            </p>
-        </div>
-        <div className={styles.item__tags}>
-            <div className={classNames({
-                [ styles.item__type]: true,
-                [styles[`item__type__${category.label.toLowerCase()}`]]: true
-            })}>
-                {category.label}
+        <div className={styles.item} onClick={() => navigate(`/dish/${id}`)}>
+            <div className={styles.item__image}>
+                <img  src={photo} alt={title} />
             </div>
-            <div className={styles.item__portion}>
-                {size}g
+            <div className={styles.item__description}>
+                <h2>
+                    {title}
+                </h2>
+                <p>
+                    {description}
+                </p>
             </div>
-            <div className={styles.item__partysize}>
-                Serving {serving} {serving === 1 ? "person" : " people"}
-            </div>
-            <div className={styles.item__price}>
-                ${price.toFixed(2)}
-            </div>
-
-        </div>
-    </div>)
+            <Tags {...props}/>
+        </div>);
 }
