@@ -21,7 +21,7 @@ export default function Start() {
         <section className={styles.ctn}>
             
             <h3 className={stylesTema.title}>
-                Kitchen Recomendations
+                Kitchen Recommendations
             </h3>
             <div className={styles.recomended}>
                 {recomendedDishes.map(item => (
