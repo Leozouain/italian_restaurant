@@ -10,10 +10,10 @@ const images = [pasta1, pasta2];
 export default function About() {
 
     return (
-        <section>
+        <section className={styles.ctn}>
             <h1 className={stylesTema.title}>About Us</h1>
             <div className={styles.aboutUs}>
-                <img src={house} alt="Italian Restaurant" />
+                <img className={styles.aboutUs__img} src={house} alt="Italian Restaurant" />
                 <div className={styles.aboutUs__text}>
                     <p>
                         We at Italian's Spaghetti Bar offer you, our dear customers, the tastiest and most sophisticated Homemade Italian Pasta on Mars! We cherish the traditional ingredients of Italian cuisine, fresh and of excellent quality so that your experience is even more intense!

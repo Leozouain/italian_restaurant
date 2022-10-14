@@ -29,3 +29,17 @@
       }
     }
   }
+
+
+  @media (max-width: 966px){
+    .ctn{
+      display: flex;
+      flex-direction: column;
+    }
+    .aboutUs{
+
+      &__img{
+        display: none;
+      }
+    }
+  }

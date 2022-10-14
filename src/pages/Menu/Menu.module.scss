@@ -65,4 +65,16 @@ $desktop_md: 1280px;
 
   }
 
+  @media (max-width: 700px){
+    .menu{
+        padding: 0 0;
+    }
+
+    .carte{
+        padding: 0;
+        display: inline-block;
+        width: 100vw;
+    }
+  }
+
  

@@ -18,7 +18,7 @@ export default function Start() {
 
 
     return (
-        <section>
+        <section className={styles.ctn}>
             
             <h3 className={stylesTema.title}>
                 Kitchen Recomendations

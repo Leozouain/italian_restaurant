@@ -35,3 +35,9 @@ $desktop_md: 1280px;
     font-weight: bold;
   }
 }
+
+@media (max-width: 890px){
+  .img{
+    width: 100%;
+  }
+}

@@ -30,6 +30,7 @@ $desktop_md: 1280px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
   }
   .title {
     font-size: 3rem;
@@ -109,5 +110,26 @@ $desktop_md: 1280px;
     &__price {
       color: $red;
       font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 845px){
+    .image{
+      width: 100% ;
+      text-align: center;
+      margin: auto;
+      align-content: center;
+    }
+    .container{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 540px){
+    .image{
+      width: 100%;
     }
   }
