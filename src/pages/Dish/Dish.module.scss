@@ -115,7 +115,7 @@ $desktop_md: 1280px;
 
   @media (max-width: 845px){
     .image{
-      width: 100% ;
+      width: 80vw ;
       text-align: center;
       margin: auto;
       align-content: center;
@@ -126,10 +126,9 @@ $desktop_md: 1280px;
       justify-content: center;
       align-items: center;
     }
-  }
-
-  @media (max-width: 540px){
-    .image{
-      width: 100%;
+    .title{
+      font-size: 2rem;
     }
   }
+
+  

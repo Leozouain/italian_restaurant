@@ -30,7 +30,7 @@ export default function About() {
             <div className={styles.images}>
                 {images.map((imagem, index) => (
                     <div key={index} className={styles.images__image}>
-                        <img src={imagem} alt="Pasta Photo" />;
+                        <img className={styles.photo} src={imagem} alt="Pasta Photo" />;
                     </div>
                 ))};
             </div>

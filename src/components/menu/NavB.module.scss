@@ -75,14 +75,17 @@ $desktop_md: 1280px;
       display: block;
       width: 100vw;
       margin: auto;
-      padding: 30px 0;
+      padding: 0 0;
       margin-bottom: 15px;
+      a{
+        
+      }
       
     }
 
 
     &__link{
-      padding: 0 15px;
+      padding: 0;
       width: 100vw;
       font-size: 2rem;
       cursor: pointer;
@@ -92,7 +95,7 @@ $desktop_md: 1280px;
     }
   }
   .links{
-    padding: 10px;
+    padding: 0;
     background-color: #dbdcde;
     width: 80%;
     margin-bottom: 5px;
@@ -102,6 +105,12 @@ $desktop_md: 1280px;
   }
   .links:hover{
     background-color: #f0f2f5;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
 // ***** Header Styles*******
