@@ -71,3 +71,23 @@ $veganos: #80aa40;
     }
   }
 }
+
+@media (max-width: 700px){
+    .item{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: inline-block;
+
+      &__description{
+        justify-content: center;
+        text-align: center;
+      }
+
+      &__title{
+        display: flex;
+        justify-content: center;
+
+      }
+    }
+}

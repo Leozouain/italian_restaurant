@@ -79,21 +79,15 @@ $red-dark: #c62a2a;
 
 
   @media (max-width: 700px){
-   .recomended{
-    flex-direction: column;
+   .imgHome{
     
    }
-   .recomend{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    &__image{
-      width: 100vw;
-      img{
-        width: 500px;
-      }
+   .ourHome{
+    &__address{
+      position:static;
     }
    }
-   
-  }
+    
+  
+
+}

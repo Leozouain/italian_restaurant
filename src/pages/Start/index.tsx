@@ -40,7 +40,7 @@ export default function Start() {
             </div>
             <h3 className={stylesTema.title}>Our Home</h3>
             <div className={styles.ourHome}>
-                <img src={ourHome} alt="Welcome to Our Home" />
+                <img className={styles.imgHome} src={ourHome} alt="Welcome to Our Home" />
                 <div className={styles.ourHome__address}>
                     1609 Red Hallway blvd <br /><br /> Red Ground - Mars
                 </div>

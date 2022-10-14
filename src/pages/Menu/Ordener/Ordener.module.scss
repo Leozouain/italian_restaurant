@@ -62,3 +62,9 @@ $desktop_md: 1280px;
       }
     }
   }
+
+  @media (max-width: 700px){
+    .ordener{
+      width: 100%;
+    }
+  }
